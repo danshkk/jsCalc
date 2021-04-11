@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.caclContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(220, 236, 241);
+    border-radius: 25px;
+    height: 50vh;
+    width: 80vh;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.calcBtns {
+    width: 90%;
+    padding: 40px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calcTextField {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+.firstNum {
+    display: flex;
+    flex-direction: column;
+}
+.secondNum {
+    display: flex;
+    flex-direction: column;
+}
+.textNum {
+    margin-bottom: 15px;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.calcBtns > button {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(175, 182, 207);
+    font-size: 20px;
+    transition: 0.2s;
+}
+input {
+    padding: 10px;
+    opacity: 70%;
+    font-size: 15px;
+}
+.calcBtns > button:hover {
+    transform: scale(1.1);
+    background-color: rgb(153, 147, 185);
+}
+.calcBtns > button:last-child {
+    margin-right: 0px;
+}
