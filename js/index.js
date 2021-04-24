@@ -35,7 +35,9 @@ function operationOnBtnClick(eventObject) {
     makeOperation(opera);
 }
 
-btnPlus.addEventListener('click', operationOnBtnClick);
-btnMinus.addEventListener('click', operationOnBtnClick);
-btnMultiply.addEventListener('click', operationOnBtnClick);
-btnSplit.addEventListener('click', operationOnBtnClick);
+var operationButtons = [btnPlus, btnMinus, btnMultiply, btnSplit];
+
+for (var i = 0; i < operationButtons.length; i++) {
+    var button = operationButtons[i];
+    button.addEventListener('click', operationOnBtnClick);
+}
